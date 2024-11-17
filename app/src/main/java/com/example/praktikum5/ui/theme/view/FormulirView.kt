@@ -90,6 +90,19 @@ fun FormulirView(
                     Text(selectedJK)
                 }}
         }
+
+        TextField(
+            value = nohp,
+            onValueChange =  {nohp = it},
+            modifier = Modifier.fillMaxWidth(),
+            label = {
+                Text("No HP")
+            },
+            placeholder = {
+                Text("Masukkan No HP Anda")
+            }
+
+        )
         TextField(
             value = email,
             onValueChange =  {email = it},
