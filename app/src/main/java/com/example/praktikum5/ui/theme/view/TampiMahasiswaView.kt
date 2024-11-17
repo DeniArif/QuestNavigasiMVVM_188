@@ -54,7 +54,6 @@ fun TampilMahasiswaView(
     }
 
 }
-
 @Composable
 fun TampilData(
     Judul : String,
