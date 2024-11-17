@@ -132,6 +132,7 @@ fun FormulirView(
         },modifier = Modifier.padding(vertical = 10.dp) ) {
             Text("Simpan")
         }
+
     }
 
 }
