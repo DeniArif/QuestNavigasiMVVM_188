@@ -20,6 +20,7 @@ class MahasiswaViewModel: ViewModel() {
         _uistate.update { data ->
             data.copy(
                 nama = ls[0],
+                nim
                 gender = ls[1],
                 alamat = ls[2]
             )

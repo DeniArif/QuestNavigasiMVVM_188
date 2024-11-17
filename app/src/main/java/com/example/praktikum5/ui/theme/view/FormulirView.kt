@@ -41,8 +41,10 @@ fun FormulirView(
     var nohp by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
     var jenisK by remember { mutableStateOf("") }
+    var NIM by remember { mutableStateOf("") }
 
-    var ListData : MutableList<String> = mutableListOf(nama, jenisK, alamat)
+
+    var ListData : MutableList<String> = mutableListOf(nama, NIM, jenisK, nohp, alamat)
 
     Column (modifier = Modifier
         .fillMaxSize()
@@ -64,6 +66,19 @@ fun FormulirView(
                 Text("Masukkan Nama Anda")
             }
         )
+
+        TextField(
+            value = NIM,
+            onValueChange =  {NIM = it},
+            modifier = Modifier.fillMaxWidth(),
+            label = {
+                Text("NIM")
+            },
+            placeholder = {
+                Text("Masukkan NIM Anda")
+            }
+        )
+
         Row{
             pilihanJK.forEach{selectedJK ->
                 Row (

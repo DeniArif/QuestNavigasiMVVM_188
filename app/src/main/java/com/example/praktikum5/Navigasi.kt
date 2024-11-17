@@ -48,13 +48,11 @@ fun Navigasi(
                     }
                 )
             }
-            composable(route = Halaman.Data.name){
+            composable(route = Halaman.Data.name) {
                 TampilMahasiswaView(
                     mhs = uiState,
                     navController = navHost
-                    }
                 )
-
             }
         }
     }
